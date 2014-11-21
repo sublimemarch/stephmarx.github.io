@@ -1,0 +1,17 @@
+I Must Not Fear:
+Why I Have Faith in the Next 18 Weeks
+
+Friday November 21, 2014
+
+After watching Shereef's Fireside Chat, I feel I have a deeper understanding of the culture of DBC. Previously, I saw DBC as this magical institution that knows exactly what it's doing with the goal of spitting out "world class beginners" and the end of 19 weeks. Now, though, I understand DBC to be constantly evolving and changing through the work of its staff, faculty, and students. It really does seem to be one big experiment to me now, with the goal of determining how best to teach someone to become a web developer in a matter of months and creating a culture that facilitates this learning.
+
+In order for this experiment to work, we students need to view ourselves not as consumers of knowledge, like we would in traditional education settings, but as creators of our own knowledge. By collaborating with our instructors and one another, we devlop ourselves, instead of treating ourselves as products of the work of our instructors. As far as pedagogies go, I believe this to be an inspired and effective method of teaching. It shifts the onus of education from the teacher to the student, making us responsible for our own learning experience. 
+
+Now, this isn't to say that DBC educators as just educational tools to be used by learners, absolutely not. I mean to say that we students are responsible for our own drive to learn at DBC, that we need to reach out and take what we can and create our own experience, instead of sitting back and waiting for knowledge to be handed to us. Only by working together with our instructors and fellow students can we build the knowledge of our cohort.
+
+This interdependence with other students could seem, at first, to be overwhelming. What if they all know more than me? What if they think I'm stupid or weird? What if I just slow them down and annoy them with my questions? I'm certainly no stranger to the imposter syndrome, so I'm very pleased that Shereef addressed this in his chat. Sure, it's one thing to know that we were all accepted because we're eager to learn and not afraid to admit when we don't know something, but it's another matter entirely to be reassured that we're all, really and truly, beginners from the perspective of our instructors. As Shereef said, being steps ahead of others in a cross country journey really is meaningless. Comparison within our cohort, unless done carefully, has the potential to create a culture of competition, and not a friendly one either. Sure, it's probably worthwhile that I notice it when I'm a little behind and to see who's a little ahead, but only so I know who to reach out to for help, and not for the purpose of putting myself down. "Exposing your ignorance" doesn't mean "let everyone know how much of a failure you are and that you're just awful as a whole" and I need to do my best to remember this.
+
+I'm absolutely excited to participate in DBC's learning environment and culture of creating one's own education. Heck, the fact that we're asked to really think and reflect on the culture of DBC reassures me that it's a collaborative, creative effort and something that I can really learn from. By remembering that every one of us in DBC has "a lot to offer and a lot to learn," as Shereef put it, I know that I'll be able to really respect my cohort mates and myself as learners.
+
+
+
