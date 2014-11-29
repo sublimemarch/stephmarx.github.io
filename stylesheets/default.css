@@ -28,7 +28,7 @@ header {
 }
 
 h1 {
-	font-family: 'Lobster Two', serif;
+	font-family: 'Lobster Two', serif !important;
 	margin-left: 10px;
 	position: relative;
 	color: #ca71c5;
@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Lobster', serif;
+	font-family: 'Lobster', serif !important;
 	margin-left: 10px;
 	position: relative;
 	top: -31px;
@@ -58,7 +58,7 @@ nav{
 	border-bottom-right-radius: 5px;
 }
 nav > h3 {
-	font-family: 'Domine', serif;
+	font-family: 'Domine', serif !important;
 	display: inline;
 	margin-left: 10px;
 	text-decoration: none;
@@ -86,7 +86,7 @@ body{
 }
 
 h3 {
-	font-family: 'Lobster', serif;
+	font-family: 'Lobster', serif !important;
 }
 
 h4 {
@@ -95,7 +95,7 @@ h4 {
 }
 
 #bodytext {
-	font-family: 'Domine', serif;
+	font-family: 'Domine', serif !important; 
 	font-size: 18px;
 	position: relative;
 	width: 80%;
@@ -118,7 +118,7 @@ h4 {
 
 
 #aboutme {
-	font-family: 'Domine', serif;
+	font-family: 'Domine', serif !important;
 	font-size: 18px;
 	float: right;
 	position: relative;
@@ -140,7 +140,7 @@ footer {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: 'Domine', serif;
+	font-family: 'Domine', serif !important;
 	clear: both;
 	padding: 1px;
 	border-radius: 5px;
