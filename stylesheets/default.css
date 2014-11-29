@@ -12,23 +12,25 @@ header {
 	padding: 1px;
 	border: solid 1px;
 	border-color: #3e3952;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 h1 {
 	font-family: 'Lobster Two', cursive;
 	margin-left: 10px;
 	position: relative;
-	top: 15px;
+	color: #ca71c5;
+	font-size: 40px;
 }
 
 h2 {
 	font-family: 'Lobster', cursive;
 	margin-left: 10px;
 	position: relative;
-	top: -10px;
+	top: -31px;
 	font-size: 20px;
+	left: 10px;
 }
 /* Navigation */
 nav{
@@ -41,49 +43,67 @@ nav{
 	border-color: #3e3952;
 	padding-top: 4px;
 	padding-bottom: 4px;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 nav > h3 {
 	font-family: 'Domine', serif;
 	display: inline;
 	margin-left: 10px;
+	text-decoration: none;
 }
 /* Body */
 body{
 	/* background-image: url("imgs/stardust.png"); */
 	background-color: #8c508c;
 }
-#aboutme > h3 {
+
+h3 {
 	font-family: 'Lobster', cursive;
 }
 
+#bodytext {
+	font-family: 'Domine', serif;
+	font-size: 18px;
+	position: relative;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
 
-img {
+
+#portrait {
 	position: relative;
 	width: 20%;
 	float: left;
-	margin-left: 10%;
+	margin-left: 12%;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	border-style: solid 1px black;
+	/* border-style: solid 1px black; */
 	/* border-color: #8c508c; */
-	/* border-radius: 3px; */
+	/* border-radius: 8px; */
 }
 
 
 #aboutme {
 	font-family: 'Domine', serif;
+	font-size: 18px;
 	float: right;
 	position: relative;
-	width: 40%;
+	width: 55%;
 	margin-right: 10%;
 	padding-top: 10px;
+}
+
+#aboutme > p {
+	font-size: 14px;
 }
 
 /* Footer */
 footer {
 	background-color: #3e3952;
+	/* color: #8c508c; */
+	color: #bc7abd;
 	position: relative;
 	width: 80%;
 	margin-left: auto;
@@ -91,7 +111,7 @@ footer {
 	font-family: 'Domine', serif;
 	clear: both;
 	padding: 1px;
-	border-radius: 3px;
+	border-radius: 5px;
 }
 
 footer > p {
