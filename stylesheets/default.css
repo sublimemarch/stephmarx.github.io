@@ -1,5 +1,16 @@
 /* Background pattern used with permission from subtlepatterns.com */
 
+a:link {
+	color: #583270;
+}
+
+a:visited {
+	color: #583270;
+}
+
+a:hover {
+	color: #ca71c5;
+}
 /* Header */
 header {
 	background-color: #3e3952;
@@ -51,6 +62,22 @@ nav > h3 {
 	display: inline;
 	margin-left: 10px;
 	text-decoration: none;
+	color: black;
+}
+
+a.nav:link {
+	text-decoration: none;
+	color: black;
+}
+
+a.nav:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a.nav:hover {
+	text-decoration: none;
+	color: #583270;
 }
 /* Body */
 body{
@@ -116,4 +143,16 @@ footer {
 
 footer > p {
 	margin-left: 10px;
+}
+
+a.footer:link {
+	color: #bc7abd;
+}
+
+a.footer:visited{
+	color: #bc7abd;
+}
+
+a.footer:hover{
+	color: black;
 }
