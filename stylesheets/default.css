@@ -89,13 +89,18 @@ h3 {
 	font-family: 'Lobster', cursive;
 }
 
+h4 {
+	position: relative;
+	top: 15px;
+}
+
 #bodytext {
 	font-family: 'Domine', serif;
 	font-size: 18px;
 	position: relative;
 	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 11%;
+	margin-right: 11%;
 }
 
 
