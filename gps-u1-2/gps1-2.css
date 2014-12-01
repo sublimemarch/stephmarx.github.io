@@ -1,0 +1,35 @@
+html {
+    font-family: 'Georgia';
+    background-color: #55FFFF;
+  }
+  
+#title_names{
+    width: 100%;
+  border-bottom: 2px solid black;
+  position: relative;
+  top: 100px;
+  }
+  
+h1 {
+      position: relative;  
+      float: left;
+      width: 50%;
+      font-size: 3em;
+        }
+  
+h2 {
+        float: right;
+        width: 50%;
+        position: relative;
+        top: 30px;
+        text-align: right;
+        right: 20px;
+        }
+  
+h3 {
+    clear: both;
+      }
+  
+p {
+      padding: 0px 20px 10px 20px;
+        }
