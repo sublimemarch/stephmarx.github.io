@@ -144,11 +144,16 @@ footer {
 	clear: both;
 	padding: 1px;
 	border-radius: 5px;
+/*	float: left;*/
 }
 
 footer > p {
 	margin-left: 10px;
 }
+
+/*#social-links {
+	float:right;
+}*/
 
 a.footer:link {
 	color: #bc7abd;
