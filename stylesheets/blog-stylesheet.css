@@ -36,3 +36,8 @@ section {
   position: relative;
   top: -15px;
 }
+
+code {
+  font-family: Courier;
+  color: gray;
+}
