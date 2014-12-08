@@ -1,0 +1,43 @@
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: serif;
+}
+
+h1 {
+  margin-top: 5%;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-family: sans-serif;
+  position: relative;
+  top: -10px;
+}
+
+h4{
+  font-family: sans-serif;
+  position: relative;
+  top: -15px;
+}
+
+#horizontalRule {
+  padding: 5px;
+  position: relative;
+  top: -15px;
+  outline-color: black;
+  outline-width: 1px;
+  outline-style: solid;
+  background-color: black;
+}
+
+section {
+  font-family: sans-serif;
+  position: relative;
+  top: -15px;
+}
+
+code {
+  font-family: Courier;
+  color: gray;
+}
