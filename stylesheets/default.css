@@ -1,5 +1,3 @@
-/* Background pattern used with permission from subtlepatterns.com */
-
 a:link {
 	color: #3e3952;
 }
@@ -82,7 +80,9 @@ a.nav:hover {
 /* Body */
 body{
 	/* background-image: url("imgs/stardust.png"); */
-	background-color: #8c508c;
+	/*background-color: #8c508c;*/
+	background-color: #f3edf3;
+
 }
 
 h3 {
