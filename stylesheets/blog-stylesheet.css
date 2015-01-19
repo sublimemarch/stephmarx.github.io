@@ -112,7 +112,7 @@ h6 {
 }
 
 code {
-  font-family: Courier;
+  font-family: monospace;
   color: black;
   background: #bc7abd;
   padding: 1px;
