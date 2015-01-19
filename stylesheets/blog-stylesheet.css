@@ -118,6 +118,13 @@ code {
   padding: 1px;
 }
 
+pre {
+  font-family: monospace;
+  color: black;
+  background: #bc7abd;
+  padding: 1px;
+}
+
 #bodytext {
 	font-family: 'Domine', 'Georgia', serif !important; 
 	font-size: 18px;
