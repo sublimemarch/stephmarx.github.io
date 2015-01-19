@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+<link href='https://fonts.googleapis.com/css?family=Domine|Lobster|Lobster+Two' rel='stylesheet' type='text/css'>
+<link href="../imgs/favicon.ico" rel="icon" type="../image/x-icon" />
+
+  <title>Loops in Javascript vs Ruby</title>
+  <header>
+    <h1>Stephanie Marx</h1>
+    <h2>web developer, DevBootcamp student, gamer</h2>
+  </header>
+
+  <nav>
+    <h3><a class="nav" href="../index.html">home.</a></h3>
+    <h3><a class="nav" href="../projects.html">projects.</a></h3>
+    <h3><a class="nav" href="blog/index.html">dbc blog.</a></h3>
+    <h3><a class="nav" href="../aboutme.html">more about me.</a></h3>
+    <h3><a class="nav" href="../contact.html">contact.</a></h3>
+  </nav>
+
+  <body>
+    <div id="bodytext">
+      <h4>Loops in Javascript vs Ruby</h4>
+      <h5>Sunday, January 18, 2015</h5>
+      <p>Let's take a look at a simple <code>for</code> loop in Ruby:</p>
+      <pre>
+      for x in 1..5
+        puts "#{x} is a number."
+      end</pre>
+      <p>This simple loop will print out a statement about the numbers one through five and then end. What would a <code>for</code> loop that outputs the same text look like in JavaScript?</p>
+      <pre>
+      for (x=1; x<6; x++) {
+        console.log(x + " is a number.")
+      }</pre>
+      <p>Here, we are explicitly declaring a variable <code>x</code> and setting it equal to 1. Then, we say that the loop should continue as long as <code>x<6</code>. After each time we execute the block of code in the loop, we increment <code>x</code> by one. In Ruby, we don't have to declare the variable at any point to use it as a counter in this loop. Let's take a look at <code>while</code> loops next, starting with Ruby:</p>
+      <pre>
+      x = 1
+      while x < 6 do
+        puts "#{x} is a number"
+        x += 1
+      end</pre>
+      <p>Here, we do explicitly declare the variable we use as our counter before we enter the loop. Then, we say that while the counter is less than 6, we should ouput our phrase and then increment the counter. The loop will repeat while our condition is true. What about in JavaScript?</p>
+      <pre>
+      var x = 1;
+      while (x < 6) {
+        console.log(x + " is a number")
+        x++
+      }</pre>
+      <p>As in our Ruby <code>while</code> loop, we declare our counter variable and its initial value before the loop. Then, we say that while the counter is less than 6, print out our phrase and increment the counter. The structure of the <code>while</code> loop is remarkably similar across both languages, unlike the <code>for</code> loop. Aside from the <code>do...while</code> loop in JavaScript, which is very similar to the <code>while</code> loop, that's pretty much it for loops in JavaScript, suprisingly! In Ruby, we are also able to use <code>each</code>, <code>until</code>, and <code>.times</code> to iterate code.</p>
+
+    </div>
+  </body>
+
+  <footer>
+    <p>stephanie.n.marx@gmail.com / copyright 2014</p>
+  </footer>
+</html>
