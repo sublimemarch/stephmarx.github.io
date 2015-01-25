@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Cheat Sheet</title>
+      <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Righteous|Varela+Round' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" type="text/css" href="cheat-sheet-style.css">
+
+  </head>
+  
+  <header>
+    <h1>Clever Ruby Methods Cheat Sheet</h1>
+    <h2>Nadia Bajwa and Stephanie Marx</h2>
+  </header>
+
+    <nav>
+  <ul>
+    <li>Numbers
+      <ul>
+        <li><a href="#upto">upto</a></li>
+        <li><a href="#downto">downto</a></li>
+        <li><a href="#even">even?</a></li>
+        <li><a href="#odd">odd?</a></li>
+        <li><a href="#round">round</a></li>
+        <li><a href="#times">times</a></li>
+        <li><a href="#<=>"><=></a></li>
+        <li><a href="#abs">abs</a></li>
+        
+      </ul>
+    </li>
+    <li>Strings
+      <ul>
+        <li> <a href="#replace">replace</a></li>
+        <li><a href="#insert">insert</a></li> 
+        <li><a href="#split">split</a></li>
+        <li><a href="#sub">substitution</a></li>
+      </ul>
+    </li>
+    <li>Arrays
+      <ul>
+        <li><a href="#take">take</a></li></li>
+        <li><a href="#drop">drop</a></li>
+        <li><a href="#empty">empty?</a></li>
+        <li><a href="#include"?>include?</li>
+        <li><a href="#shift">shift</a></li>
+        <li><a href="#unshift">unshift</a></li>
+        <li><a href="#insert">insert</a></li>
+        <li><a href="#delete_at">delete_at</a></li>
+        <li><a href="#delete">delete</a></li>
+        <li><a href="#uniq">uniq</a></li>
+        <li><a href="#select/reject">select/reject</a></li>
+        <li><a href="#&">intersection</a></li>
+         <li><a href="#*">repitition</a></li>
+         <li><a href="#at">at</a></li>
+        <li><a href="#count">count</a></li>
+        <li><a href="#combo">combine</a></li>
+      </ul>
+    </li>
+    <li>Hashes
+      <ul>
+       <li><a href="#hash">Syntax</a></li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ul>
+    </li>
+  </ul>
+
+  </nav>
+
+  <main>
+    <h3>Numbers</h3>  <!-- Steph -->
+      <h4><a name="upto">upto(limit){|i| block}</a></h4>
+      <p>Iterates the given block, passing increasing values from the integer up to and including the limit.</p>
+      <pre>
+        1.upto(5) {|n| print n, " "}
+        #=> 1 2 3 4 5 
+      </pre>
+      
+      <h4><a name="downto">downto(limit){|i| block}</a></h4>
+      <p>Iterates the given block, passing decreasing values from the integer down to and including the limit.</p>
+      <pre>
+        10.downto(6) {|n| print n, " "}
+        #=> 10 9 8 7 6</pre>
+      
+      <h4><a name="even">even?</a></h4>
+      <p>Returns <code>true</code> if the integer is an even number</p>
+      
+      <h4><a name="odd">odd?</a></h4>
+      <p>Returns <code>true</code> if the integer is an odd number</p>
+      
+      <h4><a name="round">round([ndigits])</a></h4>
+      <p>Rounds the integer to a given precision in decimal digits, with a default of 0 digits. Precision may be negative. Returns a floating point number when <code>ndigits</code> is positive, <code>self</code> for zero, and rounds down for negative.</p>
+      <pre>
+      1.round       #=> 1
+      1.round(2)    #=> 1.0
+      15.round(-1)  #=> 20
+      </pre>
+      
+      <h4><a name="times">times {|i| block}</a></h4>
+      <p>Iterates the given block a number of times equal to the integer, passing in values from zero to <code>int - 1</code>.</p>
+      <pre>
+        4.times do |n|
+          print n, " "
+        end
+        #=> 0 1 2 3 
+      </pre>
+  
+      <h4><a name="<=>">fixnum <=> number</a></h4>
+      <p>Compares the fixnum to another number. Returns -1, 0, +1, or nil depending on whether the fixnum is less than, equal to, or greater than numeric. nil is returned if the two values can't be compared. </p>
+      
+      <h4><a name="abs">abs</a></h4>
+      <p>Returns the absolute value of a fixnum.</p>
+      
+    <h3>Strings</h3><!--Nadia-->
+     <h4><a name="replace">Replace</h4>
+      <p>Replaces the existing content of a string with the contents you want to replace it with</p>
+      <pre>
+      For example: 
+          string = "This is going to be replaced!"
+          string.replace = "I want Chicken fingers!"
+      </pre>
+      
+      <h4><a name="insert">dInsert</h4>
+      <p>Interestingly enough strings act much like arrays, they too can be indexed. The insert method is an instance when string indeces are useful, remember that negative indices refer to the end of the string! In this method you first type out your orginal string and then you follow it with the what you wish to insert and the index at which you would like to insert it.  </p>
+      <pre> 
+          For example:
+         "tortilla".insert(-1," soup")  # => tortilla soup 
+         "totilla".insert(-2,"soup" # => tortillsoupa 
+      </pre>
+      <h4><a name="split">Split</h4>
+      <p>This is a pretty handy method, it takes a string and converts it into an array, by splitting the string. Instances where we have used this in the past include thhe comma challenge and teh credit card challenge</p>
+      <pre>
+    For Example:       
+       def seperate(integer)
+       result = integer.to_s.reverse.split(//)
+       end 
+    
+     print seperate(12345) # =>["1","2","3","4","5"]
+      </pre>
+      
+      <h4><a name="sub">Substitution</h4> 
+      <p>The gsub method can be used for substitution. This method returns a string with all the substitutions specified incorporated. For isntance if one wanted to replace all the vowels in a particular word like venom they could do that by:</p>
+      <pre>
+      replace = "venom".gsub(/[aeiou]/,"*")
+      </pre>
+      
+      
+    <h3>Arrays</h3> <!--Steph-->
+      <p>Don't forget: you can use -1 to indicate the last element of an array! -2 refers to the second last element of the array and so on.</p>
+      
+      <h4><a name="take">take</a></h4>
+      <p>Returns the first n elements of an array</p>
+      <pre>
+        numbers = [1, 2, 3, 4, 5, 6]
+        numbers.take(4)
+        #=> [1, 2, 3, 4]</pre>
+        
+      <h4><a name="drop">drop</a></h4>
+      <p>Returns the elements after n elements have been dropped</p>
+      <pre>
+        numbers = [1, 2, 3, 4, 5, 6]
+        numbers.drop(4)
+        #=> [5, 6]</pre>
+        
+      <h4><a name="empty">empty?</a></h4>
+      <p>Checks whether an array has any elements</p>
+      
+      <h4><a name="include">include?(item)</a></h4>
+      <p>Checks whether a particular item is included in the array</p>
+      
+      <h4><a name="shift">shift</a></h4>
+      <p>Removes and returns the first item of the array</p>
+      
+      <h4><a name="unshift">unshift</a></h4>
+      <p>Adds a new item to the beginning of the array.</p>
+      <pre>
+        nums = [1, 2, 3, 4]
+        nums.unshift(2)
+        #=> [2, 1, 2, 3, 4]</pre>
+        
+      <h4><a name="insert">insert</a></h4>
+      <p>Adds a new element to the array at any position. Can also be used to insert multiple values at once at the same position.</p>
+      <pre>
+        nums.insert(4, "a number") #=> [1, 2, 3, 4, "a number"]</pre>
+        
+      <h4><a name="delete_at">delete_at</a></h4>
+      <p>Deletes an element at a particular index</p>
+      <pre>
+        nums = [1, 2, 3, 4]
+        nums.delete_at(2) #=> 3</pre>
+        
+      <h4><a name="delete">delete</a></h4>
+      <p>Deletes a particular element anywhere it is located in the array</p>
+      <pre>
+        array = [1, 2, 1, 3, 4, 1]
+        array.delete(1)
+        array #=> [2, 3, 4]</pre>
+        
+      <h4><a name="uniq">uniq</a></h4>
+      <p>Returns array with only unique values remaining. Can be used destructively or non-destructively.</p>
+      <pre>
+        array = [1, 2, 3, 3, 4, 4, 7, 7, 7]
+        array.uniq!
+        array #=> [1, 2, 3, 4, 7]</pre>
+      
+      <h4><a name="select/reject">select / reject</a></h4>
+      <p>Can be done destructively or non-destructively. Selects or rejects items that meet a criteria from a block of code.</p>
+      <pre>
+        array = [1, 2, 3, 4, 5]
+        array.select { |i| i > 2}  #=> [3, 4, 5]
+        array.reject { |i| i > 2}  #=> [1, 2]
+      </pre>
+      
+      <h4><a name="&">Set intersection with &</a></h4>
+      <p>Returns a new array contianing elements common to the two arrays and excluding any duplicates.</p>
+      <pre>
+        [1, 1, 3, 5, 6] & [1, 3, 3, 3] #=> [1, 3]</pre>
+        
+      <h4><a name="*">Repetition with *</a></h4>
+      <p>With a string argument, this is equivalent to <code>array.join(str)</code>. Otherwise, it returns a new array built by concatenating the <code>int</code> copies of <code>self</code>.</p>
+      <pre>
+        [1, 3, 5] * 3     #=> [1, 3, 5, 1, 3, 5, 1, 3, 5]
+        [1, 3, 5] * ", "   #=> "1, 3, 5"
+      </pre>
+      
+      <h4><a name="at">at(index)</a></h4>
+      <p>Returns the element at index. Negative index counts from the end of the array. Returns nil if the index is out of range.</p>
+      <pre>
+        nums = [1, 2, 3, 4, 5]
+        nums.at(0)  #=> 1
+      </pre>
+      
+      <h4>collect{|item| block}</h4>
+      <p>Incokes the block once for each element of the array and creats a new array containing the values returned by the block.</p>
+      <pre>
+        nums = [1, 2, 3, 4]
+        nums.collect { |n| n*3 } #=> [3, 6, 9, 12]
+      </pre>
+      
+      <h4><a name="combo"></a>combination(n){|c| block}</h4>
+      <p>Returns all combinations of length n of elements from the array.</p>
+      <pre>
+        nums = [1, 2, 3, 4]
+        nums.combination(1).to_a  #=> [[1], [2], [3], [4]]
+        nums.combination(4).to_a  #=> [[1, 2, 3, 4]]
+      </pre>
+      
+      <h4><a name="count">count</h4>
+      <p>Returns the number of elements. If an argument is given, counts the number of elements which equal the object.</p>
+      <pre>
+        nums = [1, 2, 3, 3, 4]
+        nums.count                  #=> 5
+        nums.count(3)               #=> 2
+        nums.count {|n| n % 2 == 0} #=> 2
+      </pre>
+      
+    <h3>Hashes</h3><!--Nadia-->
+     <h4><a name="hash">Hash syntax and Key value pairs</h4>
+     Remeber hashes can be represented in a number of ways syntactically! Different syntax can 
+     effect how the key value pairs are accessed. Don't be alarmed!
+     
+     <pre>
+         For example: 
+         
+        menu = {"Ramen" => 15, "Chicken Tikka" => 10, "Vegetable Samosa" => 2}
+        menu = {:ramen  => 15, :chicken_tikka => 10, vegetable_samosa =>2 }
+        menu = {ramen: 15, chicken_tikkah: 10, vegetable_samose:2}
+        to get the value for a certain key: menu[:ramen] # => 15 
+        to get the values of the hash and place them in an array: menu.values [15, 10 , 2]
+        to get the name of all the keys and place them in an array  : menu.keys #=> ["ramen"/ "Ramen", "chicken_tikkah"/"Chicken Tikkah" , "vegetable_samosa"/"Vegetable Samosa"]
+        to check weather or not a paricular value is present in this hash: menu.has_value(2) #=> true. If a number such as 100 was put in place of 2 the method would retun false, because 100 is not a valid value in the hash. 
+
+     </pre>
+         
+         
+     </h4> 
+      
+      
+      
+      
+  </main>
+
+<!--   <footer>
+    <h4>Helpful Links</h4>
+    <a href="http://www.ruby-doc.org/">Ruby Docs!</a>
+    <a href="http://www.codecademy.com/en/tracks/ruby">Codeacademy: Ruby</a>
+    <a href="https://rubymonk.com/">Ruby Monk</a>
+    <a href="http://www.skilledup.com/learn-ruby-on-rails-guide/">Ruby Resources</a> 
+  </footer> -->
+
+
+
+
+
+</html><liL
