@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+<link href='https://fonts.googleapis.com/css?family=Domine|Lobster|Lobster+Two' rel='stylesheet' type='text/css'>
+<link href="../imgs/favicon.ico" rel="icon" type="../image/x-icon" />
+
+  <title>Recursion!</title>
+  <header>
+    <h1>Stephanie Marx</h1>
+    <h2>web developer, DevBootcamp student, gamer</h2>
+  </header>
+
+  <nav>
+    <h3><a class="nav" href="../index.html">home.</a></h3>
+    <h3><a class="nav" href="../projects.html">projects.</a></h3>
+    <h3><a class="nav" href="blog/index.html">dbc blog.</a></h3>
+    <h3><a class="nav" href="../aboutme.html">more about me.</a></h3>
+    <h3><a class="nav" href="../contact.html">contact.</a></h3>
+  </nav>
+
+  <body>
+    <div id="bodytext">
+      <h4>A Blog Post About:<br>A Blog Post About:<br>Recursion</h4>
+      <h5>Sunday, January25, 2015</h5>
+      <h6>What is recursion?</h6>
+      <p>Recursion is the process of defining something using itself. Recursion is esepcially useful in mathematics and (surprise, surprise) programming! A simple example of recursion could be the Fibonacci sequence, where a number is defined as the sum of the previous two numbers in the series. Recursion is somewhat similar to circular reasoning in logic (example: Blue is the color of the sky. The sky is the color blue), which in fact uses recursion to complete its "circle."</p>
+      <h6>When is recursion used?</h6>
+      <p>So, outside of representing fun and useful mathematical ideas, when would we use recursion? Recursion is also used in a variety of real-world engineering tasks, such as fly-by-wire systems for airplanes. The system receives an input about physical orientation and applies a calculation to the orientation, producing a corrected orientation.The system then passes this new orientation to itself and begins again. This prevents pilots from overshooting maneuvers and allows for a comfortable ride. This is similar to the psychophysical process our brains use to self-right using our inner ear. A signal is recursively processed and our position is corrected to keep us balanced and upright.</p>
+      <h6>Recursion and programming</h6>
+      <p>To be clear, a recursive process is very different from a loop. A loop simply refers back to an earlier step and begins again. A recursive process uses its result as an input. It defines its steps using its steps. Here's a simple pseudocode example:</p>
+      <pre>
+        Step 1: Pick a number
+        Step 2: Add 2 to the number
+        Step 3: Multiply the number by 5
+        Step 4: Pass result to step 2 and repeat.</pre>
+      <p>Sometimes, a program can be made simpler by calling it recursively on itself until the desirable case (called the base case) has been reached. It is incredibly important that a base case be defined, so the recusive process stops, otherwise it will continue infinitely.</p>
+    </div>
+  </body>
+
+  <footer>
+    <p>stephanie.n.marx@gmail.com / copyright 2014</p>
+  </footer>
+</html>
