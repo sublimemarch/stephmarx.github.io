@@ -1,0 +1,27 @@
+body {
+	font-family: 'Ubuntu Mono';
+	max-width: 50%;
+	min-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1.5em;
+	font-size: 2em;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+li {
+	display: inline;
+	font-size: 1em;
+}
+
+a {
+	color: #9A12B3;
+}
+
+a:hover {
+	color: #F7CA18;
+}
