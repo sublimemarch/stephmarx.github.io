@@ -1,3 +1,14 @@
+// COLORS
+$background: white;
+$main-text: black;
+$link: #9A12B3;
+$hover-state: #F7CA18;
+
+// FONTS
+
+
+// STYLING
+
 body {
 	font-family: 'Ubuntu Mono';
 	max-width: 50%;
@@ -9,10 +20,10 @@ body {
 }
 
 a {
-	color: #9A12B3;
+	color: $link;
 
 	&:hover {
-		color: #F7CA18;
+		color: $hover-state;
 	}
 }
 
