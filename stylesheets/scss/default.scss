@@ -1,39 +1,39 @@
-// COLORS
-$background: white;
-$main-text: black;
-$link: #9A12B3;
-$hover-state: #F7CA18;
+// // COLORS
+// $background: white;
+// $main-text: black;
+// $link: #9A12B3;
+// $hover-state: #F7CA18;
 
-// FONTS
+// // FONTS
 
 
-// STYLING
+// // STYLING
 
-body {
-	font-family: 'Ubuntu Mono';
-	max-width: 50%;
-	min-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 1.5em;
-	font-size: 2em;
-}
+// body {
+// 	font-family: 'Ubuntu Mono';
+// 	max-width: 50%;
+// 	min-width: 700px;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	padding-top: 1.5em;
+// 	font-size: 2em;
+// }
 
-a {
-	color: $link;
+// a {
+// 	color: $link;
 
-	&:hover {
-		color: $hover-state;
-	}
-}
+// 	&:hover {
+// 		color: $hover-state;
+// 	}
+// }
 
-.social-icons {
-	list-style-type: none;
-	padding-left: 0;
+// .social-icons {
+// 	list-style-type: none;
+// 	padding-left: 0;
 
-	li {
-		display: inline;
-		font-size: 1em;
-	}
+// 	li {
+// 		display: inline;
+// 		font-size: 1em;
+// 	}
 
-}
+// }

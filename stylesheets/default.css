@@ -1,22 +1,3 @@
-body {
-  font-family: 'Ubuntu Mono';
-  max-width: 50%;
-  min-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1.5em;
-  font-size: 2em; }
 
-a {
-  color: #9A12B3; }
-  a:hover {
-    color: #F7CA18; }
-
-.social-icons {
-  list-style-type: none;
-  padding-left: 0; }
-  .social-icons li {
-    display: inline;
-    font-size: 1em; }
 
 /*# sourceMappingURL=default.css.map */
