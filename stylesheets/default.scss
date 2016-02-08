@@ -5,12 +5,13 @@ $link: #9A12B3;
 $hover-state: #F7CA18;
 
 // FONTS
-
+$title: 'Monofett', sans-serif;
+$body: 'VT323', sans-serif ;
 
 // STYLING
 
 body {
-	font-family: 'Ubuntu Mono';
+	font-family: $body;
 	max-width: 50%;
 	min-width: 700px;
 	margin-left: auto;
