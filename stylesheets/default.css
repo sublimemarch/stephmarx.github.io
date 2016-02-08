@@ -18,36 +18,57 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
+html {
+  position: relative;
+  min-height: 100%; }
+
 body {
   font-family: "VT323", sans-serif;
   font-size: 24px;
-  background-color: #f4b1e5; }
+  background-color: #f4b1e5;
+  margin: 0 0 50px; }
 
 nav {
   background-color: black;
   color: #f4b1e5; }
 
 h1 {
+  font-family: "Monofett", sans-serif;
   font-size: 80px;
   letter-spacing: 8px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  margin-top: -10px; }
 
 .main-content {
-  padding: 10px 10px 0px; }
+  padding: 10px 10px 0px;
+  width: 50%;
+  height: 100%; }
+  .main-content h2 {
+    padding-bottom: 10px; }
 
 a {
   color: #0000cc; }
   a:hover {
     color: blue; }
 
-h1 {
-  font-family: "Monofett", sans-serif; }
+footer {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%; }
+  footer a {
+    color: #f4b1e5; }
+    footer a:hover {
+      color: #fadef4; }
 
 .social-icons {
   list-style-type: none;
-  padding-left: 0; }
+  padding: 5px 5px 0px; }
   .social-icons li {
     display: inline;
-    font-size: 1em; }
+    font-size: 10px;
+    margin-right: -2px; }
 
 /*# sourceMappingURL=default.css.map */
