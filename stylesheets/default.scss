@@ -21,9 +21,6 @@ time, mark, audio, video {
 }
 
 // COLORS
-$pale-blue: #BFEDF4;
-$lavender: #A499FD;
-$purple: #BA86E7;
 $pink: lighten(#EE84D6, 10%);
 
 $link: darken(blue, 10%);
@@ -56,16 +53,15 @@ nav {
 
 h1 {
 	font-family: $title;
-	font-size: 80px;
 	letter-spacing: 8px;
 	padding-left: 10px;
-	margin-top: -10px;
+	// margin-top: -10px;
 }
 
 .main-content {
 	padding: 10px 10px 0px;
-	width: 50%;
 	height: 100%;
+	max-width: 700px;
 
 	h2 {
 		padding-bottom: 10px;
@@ -108,4 +104,16 @@ footer {
 		margin-right: -2px;
 	}
 
+}
+
+@media (min-width: 750px){
+	h1 {
+		font-size: 80px;
+	}
+}
+
+@media (max-width: 749px){
+	h1 {
+		font-size: 40px;
+	}
 }
