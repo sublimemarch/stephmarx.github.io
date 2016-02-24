@@ -84,14 +84,23 @@ body {
 	padding-bottom: $footer-height;
 }
 
-img {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+#hexGrid {
+	img {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	img:hover {
+		-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+	}
 }
 
-img:hover {
-	-webkit-filter: grayscale(0%);
-	filter: grayscale(0%);
+.modal {
+	img {
+		max-height: 500px;
+		margin-top: 24px;
+	}
 }
 
 footer {

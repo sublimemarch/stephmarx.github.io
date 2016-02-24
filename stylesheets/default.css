@@ -54,13 +54,16 @@ body {
 .right-content {
   padding-bottom: 50px; }
 
-img {
+#hexGrid img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
-
-img:hover {
+#hexGrid img:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%); }
+
+.modal img {
+  max-height: 500px;
+  margin-top: 24px; }
 
 footer {
   background-color: black;

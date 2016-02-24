@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheets/hexagons.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/hexagons.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/modal.css">
 	<link href='https://fonts.googleapis.com/css?family=VT323|Monofett' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
 	<link href="imgs/favicon.ico" rel="icon" type="image/x-icon" />
@@ -16,36 +17,49 @@
 
 		<ul id="hexGrid">
       <li class="hex">
-        <a class="hexIn" href="#">
+        <a class="hexIn openModal" href="#humble">
           <img src="imgs/humble_small.jpg">
         </a>
       </li>
 			<li class="hex">
-        <a class="hexIn" href="#">
+        <a class="hexIn openModal" href="#dcp_charsys">
           <img src="imgs/dcp_charsys_small.jpg">
         </a>
       </li>
 			<li class="hex">
-				<a class="hexIn" href="#">
+				<a class="hexIn openModal" href="#im_charsys">
 					<img src="imgs/im_charsys_small.jpg">
 				</a>
 			</li>
 			<li class="hex">
-				<a class="hexIn" href="#">
+				<a class="hexIn openModal" href="#im_main">
 					<img src="imgs/im_main_small.jpg">
 				</a>
 			</li>
 			<li class="hex">
-				<a class="hexIn" href="#">
+				<a class="hexIn openModal" href="#larps">
 					<img src="imgs/larps_small.jpg">
 				</a>
 			</li>
 			<li class="hex">
-				<a class="hexIn" href="#">
+				<a class="hexIn openModal" href="#photoplop">
 					<img src="imgs/photoplop_small.jpg">
 				</a>
 			</li>
 		</ul>
+
+		<aside id="photoplop" class="modal">
+	    <div>
+        <h2>Photoplop - April 2015</h2>
+        <p>Photoplop was built as a final project during at Dev Bootcamp and was created by myself and two other students in less than eight days. Photoplop is a mobile-first web app built with Ruby On Rails, that enables users to collaboratively build photo albums. Other technologies used include Cloudinary, Instagram API, Foundation and Omniauth.</p>
+				<p>I designed the user interface and implemented the front end design using HTML, SCSS, the Foundation framework, and Javascript.</p>
+				<p><a href="https://github.com/chi-fiddler-crabs-2015/Photo-Plop">View on Github</a> - <a href="https://photoplop.herokuapp.com">Live Site</a></p>
+				<img src="imgs/photoplop_small.jpg">
+
+        <a href="#close" title="Close">Close</a>
+	    </div>
+		</aside>
+
 	</div>
 
 	<div class="right-content">
