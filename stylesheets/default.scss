@@ -21,11 +21,12 @@ time, mark, audio, video {
 }
 
 // COLORS
-$pink: lighten(#EE84D6, 10%);
+$yellow: #FDFAED;
+$orange: #F9E1CB;
+$top-gradient: $yellow;
+$bottom-gradient: $orange;
 
-$link: darken(blue, 10%);
-$hover-state: blue;
-$background: $pink;
+$background: $bottom-gradient;
 
 // FONTS
 $title: 'Monofett', sans-serif;
@@ -44,38 +45,41 @@ body {
 	font-size: 24px;
 	background-color: $background;
 	margin: 0 0 $footer-height;
-}
 
-nav {
-	background-color: black;
-	color: $background;
+	/* fallback */
+	background-color: $top-gradient;
+
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($bottom-gradient), to($top-gradient));
+
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, $top-gradient, $bottom-gradient);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, $top-gradient, $bottom-gradient);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(top, $top-gradient, $bottom-gradient);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, $top-gradient, $bottom-gradient);
 }
 
 h1 {
-	font-family: $title;
-	letter-spacing: 8px;
-	padding-left: 10px;
-	// margin-top: -10px;
+	font-family: $body;
+	font-size: 32px !important;
+	padding-bottom: 10px;
 }
 
 .main-content {
 	padding: 10px 10px 0px;
 	height: 100%;
-	max-width: 700px;
 
-	h2 {
+	p {
+		max-width: 700px;
 		padding-bottom: 10px;
 	}
 }
-
-a {
-	color: $link;
-
-	&:hover {
-		color: $hover-state;
-	}
-}
-
 
 footer {
 	background-color: black;
