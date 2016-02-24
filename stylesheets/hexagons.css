@@ -45,10 +45,6 @@
     -webkit-transform: skewY(-30deg) rotate(60deg);
         -ms-transform: skewY(-30deg) rotate(60deg);
             transform: skewY(-30deg) rotate(60deg);
-    /*SHADOW*/
-    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -63,7 +59,7 @@
 
 
 /*** SPACING AND SIZING *****************************************************************/
-@media (min-width:601px) { /* <- 3-2  hexagons per row */
+@media (min-width:1001px) { /* <- 3-2  hexagons per row */
     .hex {
         width: 32.666%; /* = (100-2) / 3 */
         padding-bottom: 37.720%; /* =  width / sin(60) */
@@ -92,7 +88,7 @@
         clear: left;
     }
 }
-@media (max-width: 600px) { /* <- 2-1  hexagons per row */
+@media (max-width: 1000px) { /* <- 2-1  hexagons per row */
     .hex {
         width: 49.5%; /* = (100-1) / 2 */
         padding-bottom: 57.158%; /* =  width / sin(60) */
