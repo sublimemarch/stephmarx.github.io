@@ -71,14 +71,33 @@ h1 {
 	padding-bottom: 10px;
 }
 
-.main-content {
+body {
 	padding: 10px 10px 0px;
 	height: 100%;
 
 	p {
-		max-width: 700px;
 		padding-bottom: 10px;
 	}
+}
+
+img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+img:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+.left-content {
+	float: left;
+	width: 50%;
+}
+
+.right-content {
+	float: right;
+	width: 50%;
 }
 
 footer {
